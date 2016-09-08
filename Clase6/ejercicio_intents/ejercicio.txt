@@ -1,0 +1,10 @@
+Hacer una aplicacion que posea una pantalla ppal con:
+1) un boton que permita ingresar una url
+2) un textview para visualizar la url ingresada
+3) un boton para lanzar un browser con la url ingresada
+
+Al presionar el primer boton, se debe lanzar otra activity la cual tendra:
+1) un edittext para ingresar la url
+2) un boton para aceptar y volver a la activity anterior
+
+utilizar startActivityForResult

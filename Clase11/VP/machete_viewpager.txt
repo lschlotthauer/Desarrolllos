@@ -1,0 +1,110 @@
+Agregar a AppBarLayout :
+
+android:id="@+id/appBar"
+
+___________________________________________________________________________________________________
+
+Agregar en content_main:
+
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+	android:layout_below="@id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+___________________________________________________________________________________________________
+
+
+public class Pantalla1Fragment extends Fragment{
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle 
+                                                           savedInstanceState) {
+
+    	// Creamos la View para este fragment y la devolvemos
+        ViewGroup rootView = (ViewGroup) 
+                            inflater.inflate(R.layout.layout_contenido1, 
+                                                              container, false);
+
+        // Cargamos la View con contenido, seteamos listeners, etc.
+        //...
+        
+        return rootView;
+    }
+}
+
+
+___________________________________________________________________________________________________
+
+
+
+public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter 
+{
+    private static final int NUM_PAGES = 3;
+    
+    public ScreenSlidePagerAdapter(FragmentManager fm) 
+    {
+        super(fm);
+    }
+
+    @Override
+    public Fragment getItem(int position) 
+    {
+    	// Segun la posicion, creo el fragment correspondiente y lo devuelvo
+    	switch(position)
+    	{
+    		case 0 : return new Pantalla1Fragment();
+    		case 1 : return new Pantalla2Fragment();
+    		case 2 : return new Pantalla3Fragment();    		
+    	}
+    	return null;
+    }
+
+    @Override
+    public int getCount() 
+    {
+        return NUM_PAGES;
+    }
+}
+
+
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:background="#FFffa22a"
+        app:tabIndicatorColor="#FFea8400"
+        app:tabSelectedTextColor="#FFFFFFFF"
+        app:tabTextColor="#AAFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+		
+___________________________________________________________________________________________________
+
+
+
+TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);      
+tabLayout.setupWithViewPager(mPager);
+
+
+___________________________________________________________________________________________________
+
+    // Devolvemos el titulo de cada Fragment
+    @Override
+    public CharSequence getPageTitle(int position)
+    {
+        switch(position)
+        {
+            case 0: return "Salta";
+            case 1: return "Santa Cruz";
+            default: return "Córdoba";
+        }
+    }
+
+
+
+

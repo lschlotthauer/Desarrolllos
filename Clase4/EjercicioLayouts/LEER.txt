@@ -1,0 +1,1 @@
+Armar el xml de layout como se muestra en la figura. Utilizar LinearLayouts y RelativeLayouts de ser necesario. Respetar el espaciado.

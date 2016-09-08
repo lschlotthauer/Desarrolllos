@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EjemploLayouts</string>
+    <string name="tvNombre">Ingrese su nombre:</string>
+    <string name="tvApellido">Ingrese su apellido:</string>
+    <string name="tvDni">DNI:</string>
+    <string name="tvSexo">Sexo:</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="rdoHombre">Hombre</string>
+    <string name="rdoMujer">Mujer</string>
+</resources>

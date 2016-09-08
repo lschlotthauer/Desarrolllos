@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EjemploViewPager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="titulo_contenido1">Cerro de los siete colores</string>
+    <string name="info_contenido1">El Cerro de los Siete Colores es uno de los cerros que bordea la Quebrada de Purmamarca la cual es a su vez es un ramal occidental de la Quebrada de Humahuaca ascendente hacia la Cuesta del Lipán, en la provincia de Jujuy, Argentina.
+Su peculiar gama de colores es producto de una compleja historia geológica que incluye sedimentos marinos, lacustres y fluviales elevados por los movimientos tectónicos.</string>
+
+    <string name="titulo_contenido2">Glaciar Perito Moreno</string>
+    <string name="info_contenido2">El glaciar Perito Moreno es una gruesa masa de hielo ubicada en el departamento Lago Argentino de la provincia de Santa Cruz, en el sudoeste de la Argentina, en la región de la Patagonia.
+Este glaciar se origina en el campo de hielo Patagónico Sur. En su descenso, alcanza el brazo Sur del lago Argentino, con un frente de 5 km de longitud, aflorando sobre el agua con una altura de unos 60 m.</string>
+
+    <string name="titulo_contenido3">Catedral de Córdoba</string>
+    <string name="info_contenido3">La Catedral de Córdoba es la iglesia matriz de la ciudad argentina de Córdoba, capital de la provincia del mismo nombre. La catedral de la ciudad de Córdoba se encuentra en el núcleo histórico de dicha ciudad, que coincide prácticamente
+con el centro geográfico de la ciudad; su ángulo sureste (que es el tomado como referencia de dirección) da a la esquina de las calles Independencia y 27 de abril.</string>
+
+
+
+
+
+</resources>
