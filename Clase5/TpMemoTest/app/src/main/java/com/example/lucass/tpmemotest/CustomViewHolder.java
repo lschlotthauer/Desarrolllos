@@ -21,5 +21,6 @@ public class CustomViewHolder extends RecyclerView.ViewHolder implements View.On
 
     @Override
     public void onClick(View v) {
-        listener.clickEnFicha(getAdapterPosition());    }
+        listener.clickEnFicha(getAdapterPosition());
+    }
 }

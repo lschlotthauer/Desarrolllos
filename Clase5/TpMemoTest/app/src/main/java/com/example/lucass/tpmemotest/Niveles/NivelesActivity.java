@@ -50,7 +50,7 @@ public class NivelesActivity extends AppCompatActivity implements OnNivelClick, 
 
     @Override
     public void clickEnNivel(int position) {
-        Log.d("Nivel: ","Click en nivel: " + position+1);
+        Log.d("TpMemoTest: ","Click en nivel: " + position+1);
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("Nivel", position+1);
         startActivity(i);

@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondo">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vidas: 3 - "
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorTexto"
+        android:id="@+id/textVidas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tiempo 00:30"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorTexto"
+        android:id="@+id/textTiempo" />
+    </LinearLayout>
+
+<RelativeLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,10 +40,13 @@
     android:background="@color/colorFondo"
     tools:context="com.example.lucass.tpmemotest.MainActivity">
 
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scrollbars="vertical" />
 
 </RelativeLayout>
+
+</LinearLayout>

@@ -10,6 +10,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -51,20 +52,22 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         if (f.getEstado() == Ficha.TAPADA && tiros <= 2 ) {
             f.setEstado(Ficha.DESTAPADA);
 
-
             if(tiros == 1) {
                 primerClickPosition = position;
+                tiros ++;
             }
             else if (tiros == 2) {
                 segundoClickPosition = position;
+
                 worker = new Worker(h,1000);
                 worker.start();
-                tiros = 0;
+                tiros ++;
             }
-
-            tiros ++;
-            adaptador.notifyDataSetChanged();
         }
+        if(tiros == 3){
+            tiros = 1;
+        }
+        adaptador.notifyDataSetChanged();
     }
 
 
@@ -90,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                 break;
             default: break;
         }
-
         worker = new Worker(h,time);
         worker.start();
     }
@@ -120,8 +122,8 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     @Override
     public boolean handleMessage(Message msg) {
         if(msg.arg1 == 1) {
-            Log.d("asdasdasd", "primera ficha posicion: " + primerClickPosition);
-            Log.d("asdasdasd", "segunda ficha posicion: " + segundoClickPosition);
+            Log.d("TpMemoTest", "primera ficha posicion: " + primerClickPosition);
+            Log.d("TpMemoTest", "segunda ficha posicion: " + segundoClickPosition);
             Ficha ficha1 = lista.get(primerClickPosition);
             Ficha ficha2 = lista.get(segundoClickPosition);
 
