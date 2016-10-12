@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"មានរួចទៅហើយ"</string>
+    <string msgid="6295623783273502721" name="app_name">"វិទ្យុ FM"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"បោះបង់"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"រក្សាទុក"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"វាយបញ្ចូលឈ្មោះឯកសារនៅទីនេះ"</string>
+    <string msgid="2732520024474501799" name="favorites">"ការចូលចិត្ត"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"ដើម្បី​ស្តាប់ សូម​ដោត​កាស​ចូល (ប្រើ​ជា​អង់តែន)។"</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"ការថតដែលបានរក្សាទុក"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"ចាប់ផ្តើមថត"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"ផ្ទុកឡើងវិញ"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"FM"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"លេង ឬបិទវិទ្យុ FM"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"ម"</string>
+    <string msgid="8975740653205119861" name="more">"ច្រើនទៀត"</string>
+    <string msgid="6709882926236090124" name="not_available">"មិនមានទេបច្ចុប្បន្ននេះ"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"កាសស្តាប់"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"ឧបករណ៍បំពងសម្លេង"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"ការថតនៅក្នុងដំណើរការ"</string>
+    <string msgid="8695283158200902780" name="record_title">"ការថត"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"កំពុងថត…"</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"យកការចូលចិត្តចេញ"</string>
+    <string msgid="1770973764866255260" name="rename">"ប្ដូរ​ឈ្មោះ"</string>
+    <string msgid="7204164791719833151" name="save">"រក្សាទុក"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"ដើម្បីស្តាប់ការថត បើកកម្មវិធី ចាក់តន្ត្រី។"</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"រក្សាទុកការថត?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"វ"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"មិនមានស្ថានីយ៍ត្រូវបានរកឃើញទេ"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"បញ្ចូលឈ្មោះស្ថានីយ៍"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"ចាប់យកស្ថានីយ៍"</string>
+    <string msgid="4027617747760605320" name="station_title">"ស្ថានីយវិទ្យុ"</string>
+    <string msgid="4787351642158009287" name="stop_record">"ឈប់ថត"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"បន្ថែមទៅការចូលចិត្ត"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"បន្ថយប្រេកង់"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"បង្កើនប្រេកង់"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"ស្ថានីយបន្ទាប់"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"ស្ថានីយពីមុន"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"ចាប់ផ្តើមថត"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"មិនអាចស្វែងរកស្ថានីយដែលមានផ្តល់ជូនទេ"</string>
+    <string msgid="2014315478895754055" name="toast_listen">"ស្តាប់"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"ការថតមិនបានរក្សាទុកទេ"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"ការថតបានរក្សាទុក"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"កំហុសខាងក្នុងបានកើតឡើងនៅក្នុងឧបករណ៍ថត!"</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"មិនមានចន្លោះទិន្នន័យកាត SD គ្រប់គ្រាន់ទេ!"</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"កាត SD  របស់អ្នកបាត់បង់ហើយ!"</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"ស្ថានីយ៍នេះត្រូវបានប្តូរឈ្មោះ"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"ស្វែងរកស្ថានីយ៍ដែលមានផ្តល់ជូន"</string>
+</resources>

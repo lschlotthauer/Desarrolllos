@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"</string>
+    <string msgid="6295623783273502721" name="app_name">"FM ರೇಡಿಯೊ"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"ತಿರಸ್ಕರಿಸು"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"ಉಳಿಸು"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"ಫೈಲ್ ಹೆಸರನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ"</string>
+    <string msgid="2732520024474501799" name="favorites">"ಮೆಚ್ಚಿನವುಗಳು"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"ಆಲಿಸಲು, ಹೆಡ್‌ಫೋನ್‌ಗಳನ್ನು ಪ್ಲಗ್ ಇನ್ ಮಾಡಿ (ಆಂಟೆನಾ ರೀತಿಯಲ್ಲಿ ಬಳಸಲಾಗುತ್ತದೆ)."</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"ರೆಕಾರ್ಡಿಂಗ್‌ಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"ರೆಕಾರ್ಡ್ ಮಾಡುವುದನ್ನು ಪ್ರಾರಂಭಿಸಿ"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"ರಿಫ್ರೆಶ್ ಮಾಡಿ"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"FM"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"FM ರೇಡಿಯೊವನ್ನು ಪ್ಲೇ ಮಾಡಿ ಅಥವಾ ನಿಲ್ಲಿಸಿ"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"ನಿ"</string>
+    <string msgid="8975740653205119861" name="more">"ಇನ್ನಷ್ಟು"</string>
+    <string msgid="6709882926236090124" name="not_available">"ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"ಇಯರ್‌ಫೋನ್"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"ಸ್ಪೀಕರ್‌"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಗತಿಯಲ್ಲಿದೆ"</string>
+    <string msgid="8695283158200902780" name="record_title">"ರೆಕಾರ್ಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"ರೆಕಾರ್ಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ…"</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"ಮೆಚ್ಚಿನದನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
+    <string msgid="1770973764866255260" name="rename">"ಮರುಹೆಸರಿಸು"</string>
+    <string msgid="7204164791719833151" name="save">"ಉಳಿಸು"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"ರೆಕಾರ್ಡಿಂಗ್‌ಗಳನ್ನು ಆಲಿಸಲು, Play Music ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಿರಿ."</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"ರೆಕಾರ್ಡಿಂಗ್ ಉಳಿಸುವುದೇ?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"ಸೆ"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"ಯಾವುದೇ ಸ್ಟೇಷನ್‌ಗಳು ಪತ್ತೆಯಾಗಿಲ್ಲ"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"ಸೇಷನ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"ಸ್ಟೇಷನ್‌ಗಳನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ"</string>
+    <string msgid="4027617747760605320" name="station_title">"ರೇಡಿಯೊ ಸ್ಟೇಷನ್‌ಗಳು"</string>
+    <string msgid="4787351642158009287" name="stop_record">"ರೆಕಾರ್ಡ್ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಿ"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"ಮೆಚ್ಚಿನದಕ್ಕೆ ಸೇರಿಸಿ"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"ತರಂಗಾಂತರವನ್ನು ಕಡಿಮೆಗೊಳಿಸಿ"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"ತರಂಗಾಂತರವನ್ನು ಹೆಚ್ಚಿಸಿ"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"ಮುಂದಿನ ಸ್ಟೇಷನ್"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"ಹಿಂದಿನ ಸ್ಟೇಷನ್"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"ರೆಕಾರ್ಡ್ ಮಾಡುವುದನ್ನು ಪ್ರಾರಂಭಿಸಿ"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"ಲಭ್ಯವಿರುವ ಸ್ಟೇಷನ್ ಹುಡುಕಲು ಸಾಧ್ಯವಿಲ್ಲ."</string>
+    <string msgid="2014315478895754055" name="toast_listen">"ಆಲಿಸು"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"ರೆಕಾರ್ಡಿಂಗ್ ಉಳಿಸಲಾಗಿಲ್ಲ"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"ರೆಕಾರ್ಡಿಂಗ್ ಉಳಿಸಲಾಗಿದೆ"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"ರೆಕಾರ್ಡರ್‌ನಲ್ಲಿ ಆಂತರಿಕ ದೋಷ ಸಂಭವಿಸಿದೆ!"</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"SD ಕಾರ್ಡ್‌ನಲ್ಲಿ ಸಾಕಷ್ಟು ಸ್ಥಳಾವಕಾಶ ಇಲ್ಲ!"</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"ನಿಮ್ಮ SD ಕಾರ್ಡ್ ಕಾಣೆಯಾಗಿದೆ!"</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"ಸ್ಟೇಷನ್ ಅನ್ನು ಮರುಹೆಸರಿಸಲಾಗಿದೆ"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"ಲಭ್ಯವಿರುವ ಸ್ಟೇಷನ್‌ಗಳ ಹುಡುಕಾಟ ನಡೆಸಲಾಗಿದೆ:"</string>
+</resources>

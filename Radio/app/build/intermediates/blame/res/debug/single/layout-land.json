@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\no_headset.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout-land\\no_headset.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\favorite_gridview.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout-land\\favorite_gridview.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout-land\\snackbar.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout-land\\snackbar.xml"
+    }
+]

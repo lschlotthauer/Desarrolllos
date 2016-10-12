@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"ఇప్పటికే ఉంది"</string>
+    <string msgid="6295623783273502721" name="app_name">"ఎఫ్ఎమ్ రేడియో"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"విస్మరించు"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"సేవ్ చేయి"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"ఫైల్ పేరుని ఇక్కడ టైప్ చేయండి"</string>
+    <string msgid="2732520024474501799" name="favorites">"ఇష్టమైనవి"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"వినేందుకు హెడ్‌ఫోన్స్‌ను ప్లగ్ ఇన్ చేయండి (ఇది యాంటెన్నాగా ఉపయోగించబడుతుంది)."</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"సేవ్ చేసిన రికార్డింగ్‌లు"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"రికార్డింగ్ ప్రారంభించు"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"రీఫ్రెష్ చేయి"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"ఎఫ్ఎమ్"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"ఎఫ్ఎమ్ రేడియో ప్లే చేయి/ఆపు"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"ని"</string>
+    <string msgid="8975740653205119861" name="more">"మరిన్ని"</string>
+    <string msgid="6709882926236090124" name="not_available">"ప్రస్తుతం అందుబాటులో లేదు"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"ఇయర్‌ఫోన్"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"స్పీకర్"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"రికార్డింగ్ ప్రోగ్రెస్‌లో ఉంది"</string>
+    <string msgid="8695283158200902780" name="record_title">"రికార్డింగ్"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"రికార్డ్ చేస్తోంది..."</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"ఇష్టమైనది నుండి తీసివేయి"</string>
+    <string msgid="1770973764866255260" name="rename">"పేరు మార్చు"</string>
+    <string msgid="7204164791719833151" name="save">"సేవ్ చేయి"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"రికార్డింగ్‌లను వినడానికి, Play సంగీతం అనువర్తనాన్ని తెరవండి."</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"రికార్డింగ్‌ను సేవ్ చేయాలా?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"సె"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"స్టేషన్‌లు ఏవీ కనుగొనబడలేదు"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"స్టేషన్ పేరుని నమోదు చేయండి"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"స్టేషన్‌లను పొందుతోంది"</string>
+    <string msgid="4027617747760605320" name="station_title">"రేడియో స్టేషన్‌లు"</string>
+    <string msgid="4787351642158009287" name="stop_record">"రికార్డింగ్ ఆపివేయి"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"ఇష్టమైనదిగా జోడించు"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"పౌనఃపున్యాన్ని తగ్గించు"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"పౌనఃపున్యాన్ని పెంచు"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"తదుపరి స్టేషన్"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"మునుపటి స్టేషన్"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"రికార్డింగ్ ప్రారంభించు"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"అందుబాటులో ఉన్న స్టేషన్‌ను గుర్తించలేదు."</string>
+    <string msgid="2014315478895754055" name="toast_listen">"వినండి"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"రికార్డింగ్ సేవ్ చేయబడలేదు"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"రికార్డింగ్ సేవ్ చేయబడింది"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"రికార్డర్‌లో అంతర్గత లోపం సంభవించింది!"</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"SD కార్డ్‌లో తగినంత ఖాళీ లేదు!"</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"మీ SD కార్డ్ లేదు!"</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"స్టేషన్ పేరు మార్చబడింది"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"అందుబాటులో ఉన్నట్లు గుర్తించిన స్టేషన్‌లు:"</string>
+</resources>

@@ -9,20 +9,24 @@ import android.os.Message;
 public class Worker extends Thread {
 
     private Handler h ;
-    public Worker(Handler h)
+    private long timeSleep;
+    public Worker(Handler h, long time)
     {
         this.h = h;
+        this.timeSleep = time;
     }
     @Override
     public void run() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(timeSleep);
         } catch (InterruptedException e) {
             return;
         }
         Message msg =  new Message();
-        msg.arg1= 1;
-        msg.obj = "ALGO";
+        if (timeSleep == 1000) {
+            msg.arg1 = 1;
+        }
+
         h.sendMessage(msg);
 
     }

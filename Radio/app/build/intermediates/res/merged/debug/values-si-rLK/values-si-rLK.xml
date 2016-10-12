@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"දැනටමත් පවතීද"</string>
+    <string msgid="6295623783273502721" name="app_name">"FM රේඩියෝව"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"ඉවත ලන්න"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"සුරකින්න"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"ගොනුවේ නම මෙතැන ටයිප් කරන්න"</string>
+    <string msgid="2732520024474501799" name="favorites">"ප්‍රියතම"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"අසා සිටීම ආරම්භ කිරීමට, හෙඩ්ෆෝනය තුළ පේනුව කරන්න (ඇන්ටනාවක් ලෙස භාවිතා කළ)."</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"පටිගත කිරීම සුරකින ලදි"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"පටිගත කිරීම ආරම්භ කරමින්"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"නැවුම් කරන්න"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"FM"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"FM රේඩියෝව  ධාවනය කරන්න හෝ නැවත් වන්න"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"M"</string>
+    <string msgid="8975740653205119861" name="more">"තවත්"</string>
+    <string msgid="6709882926236090124" name="not_available">"දැනට නොතිබේ"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"ඉයර්ෆෝන්"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"නාදකය"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"පටිගත කිරීම වෙමින් පවතී"</string>
+    <string msgid="8695283158200902780" name="record_title">"පටිගත කිරීම"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"පටිගත කිරීම…"</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"ප්‍රියතමය ඉවත් කරන්න"</string>
+    <string msgid="1770973764866255260" name="rename">"යළි නම් කරන්න"</string>
+    <string msgid="7204164791719833151" name="save">"සුරකින්න"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"පටිගත කිරීමට සවන්දීමට, සංගීත ධාවනය කරන යෙදුම විවෘත කරන්න."</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"පටිගත කිරීම සුරැකි න්නද?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"S"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"ස්ථාන හමු වූයේ නැත"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"ස්ථානයේ නම ඇතුළු කරන්න"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"ස්ථාන ලබාගනිමින්"</string>
+    <string msgid="4027617747760605320" name="station_title">"රේඩියෝ ස්ථාන"</string>
+    <string msgid="4787351642158009287" name="stop_record">"පටිගත කිරීම නැවත්වමින්"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"ප්‍රියතමය වෙත එකතු කරන්න"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"සංඛ්‍යාතය අඩුවෙමින්"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"සංඛ්‍යාතය වැඩිවෙමින්"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"ඊළඟ ස්ථානය"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"පෙර ස්ථානය"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"පටිගත කිරීම ආරම්භ කරමින්"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"තිබෙන ස්ථාන සෙවීම කළ නොහැක."</string>
+    <string msgid="2014315478895754055" name="toast_listen">"අහන්න"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"පටිගත කිරීම සුරැකුවේ නැත"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"පටිගත කිරීම සුරකින ලදි"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"පටිගත කිරීමේ අභ්‍යන්තර දෝෂයක් හට ගන්නා ලදි!"</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"ප්‍රමාණවත් නොවන කාඩ් පතක්!"</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"ඔබගේ SD කාඩ්පත නැතිවී තිබේ!"</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"ස්ථනය නැවත නම් කරන ලදි"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"තිබෙන ස්ථන සොයාගන්නා ලදි:"</string>
+</resources>

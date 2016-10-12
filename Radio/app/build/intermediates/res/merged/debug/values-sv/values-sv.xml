@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"finns redan"</string>
+    <string msgid="6295623783273502721" name="app_name">"FM-radio"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"Släng"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"Spara"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"Skriv filnamnet här"</string>
+    <string msgid="2732520024474501799" name="favorites">"Favoriter"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"Koppla in hörlurarna om du vill börja lyssna (de används som antenn)."</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"Sparade inspelningar"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"Starta inspelning"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"Uppdatera"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"FM"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"Spela upp eller stoppa FM-radio"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"M"</string>
+    <string msgid="8975740653205119861" name="more">"Fler"</string>
+    <string msgid="6709882926236090124" name="not_available">"Inte tillgänglig för närvarande"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"Hörlurar"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"Högtalare"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"Inspelning pågår"</string>
+    <string msgid="8695283158200902780" name="record_title">"Spelar in"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"Spelar in ..."</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"Ta bort från favoriter"</string>
+    <string msgid="1770973764866255260" name="rename">"Byt namn"</string>
+    <string msgid="7204164791719833151" name="save">"Spara"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"Öppna appen Play Musik om du vill lyssna på inspelningarna."</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"Vill du spara inspelningen?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"S"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"Inga kanaler hittades"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"Ange kanalens namn"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"Hämtar kanaler"</string>
+    <string msgid="4027617747760605320" name="station_title">"Radiokanaler"</string>
+    <string msgid="4787351642158009287" name="stop_record">"SLUTA SPELA IN"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"Lägg till i favoriter"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"Minska frekvensen"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"Öka frekvensen"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"Nästa kanal"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"Föregående kanal"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"Starta inspelning"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"Det går inte att söka efter tillgängliga kanaler."</string>
+    <string msgid="2014315478895754055" name="toast_listen">"LYSSNA"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"Inspelningen har inte sparats"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"Inspelningen har sparats"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"Ett internt fel uppstod i inspelningsenheten."</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"Otillräckligt utrymme på SD-kortet."</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"SD-kortet saknas."</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"Kanalen har döpts om"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"Tillgängliga kanaler som har hittats:"</string>
+</resources>

@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_favorite_off_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_favorite_off_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_favorite_on_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_favorite_on_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_headset_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_headset_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_start_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_start_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_speaker_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_speaker_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_list_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_list_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_moreoverflow_material.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\ic_menu_moreoverflow_material.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_stop_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_stop_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_rec_stop.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_rec_stop.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_increase_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_increase_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_record.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_record.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_decrease_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_decrease_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favorite_circle_button.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\favorite_circle_button.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_button.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\circle_button.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\anim.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\anim.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_next_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_next_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_overflow_selector.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_overflow_selector.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_rec_play.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_rec_play.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_fm_previous.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\drawable\\btn_fm_previous.xml"
+    }
+]

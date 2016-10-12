@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string msgid="3665755106404888637" name="already_exists">"název již existuje"</string>
+    <string msgid="6295623783273502721" name="app_name">"Rádio FM"</string>
+    <string msgid="4316913232405323087" name="btn_discard_recording">"Zahodit"</string>
+    <string msgid="7888937971238580699" name="btn_save_recording">"Uložit"</string>
+    <string msgid="3582848435650002280" name="edit_recording_name_hint">"Sem zadejte název souboru"</string>
+    <string msgid="2732520024474501799" name="favorites">"Oblíbené"</string>
+    <string msgid="6831656307562812248" name="fm_no_headset_text">"Chcete-li začít poslouchat, připojte sluchátka (slouží jako anténa)."</string>
+    <string msgid="8958996187616432424" name="fm_over_record_list">"Uložené nahrávky"</string>
+    <string msgid="2072548132520550718" name="fm_over_start_record">"Zahájit nahrávání"</string>
+    <string msgid="1351081387336325789" name="fm_station_list_menu_refresh">"Obnovit"</string>
+    <string msgid="2254633383284842986" name="fm_symbol">"FM"</string>
+    <string msgid="407678074231499621" name="fm_turn_on">"Spustit nebo zastavit rádio FM"</string>
+    <string msgid="3225846493097986594" name="minutes_label">"M"</string>
+    <string msgid="8975740653205119861" name="more">"Další"</string>
+    <string msgid="6709882926236090124" name="not_available">"Aktuálně nedostupné"</string>
+    <string msgid="5400875884296655508" name="optmenu_earphone">"Sluchátko"</string>
+    <string msgid="3726411287495057671" name="optmenu_speaker">"Reproduktor"</string>
+    <string msgid="4999850730062263290" name="record_notification_message">"Probíhá nahrávání"</string>
+    <string msgid="8695283158200902780" name="record_title">"Nahrávání"</string>
+    <string msgid="9013420338482370789" name="recording_tips">"Nahrávání…"</string>
+    <string msgid="3128670507986192468" name="remove_favorite">"Odstranit z oblíbených"</string>
+    <string msgid="1770973764866255260" name="rename">"Přejmenovat"</string>
+    <string msgid="7204164791719833151" name="save">"Uložit"</string>
+    <string msgid="8618327604827517841" name="save_dialog_caption">"Chcete-li poslouchat nahrávky, spusťte aplikaci Hudba Play."</string>
+    <string msgid="6977508764748097072" name="save_dialog_title">"Chcete nahrávku uložit?"</string>
+    <string msgid="3998011734682420096" name="seconds_label">"S"</string>
+    <string msgid="6847327406626186898" name="station_empty_text">"Nebyly nalezeny žádné stanice"</string>
+    <string msgid="4291305834497293746" name="station_rename_hint">"Zadejte název stanice"</string>
+    <string msgid="6970095710072278870" name="station_searching_tips">"Načítání stanic"</string>
+    <string msgid="4027617747760605320" name="station_title">"Rádiové stanice"</string>
+    <string msgid="4787351642158009287" name="stop_record">"ZASTAVIT NAHRÁVÁNÍ"</string>
+    <string msgid="1560744966239678417" name="talk_add_favorite">"Přidat do oblíbených"</string>
+    <string msgid="6796562419095928389" name="talk_decrease">"Snížit frekvenci"</string>
+    <string msgid="7207549524364881559" name="talk_increase">"Zvýšit frekvenci"</string>
+    <string msgid="2711772562090360378" name="talk_next_station">"Další stanice"</string>
+    <string msgid="8940546148820098004" name="talk_prev_station">"Předchozí stanice"</string>
+    <string msgid="2081128687917550957" name="talk_start_recording">"Zahájit nahrávání"</string>
+    <string msgid="8062388403825907344" name="timer_default">"00"</string>
+    <string msgid="8816492120732683772" name="toast_cannot_search">"Dostupná stanice nebyla nalezena."</string>
+    <string msgid="2014315478895754055" name="toast_listen">"POSLOUCHAT"</string>
+    <string msgid="6526674547687611282" name="toast_record_not_saved">"Nahrávka nebyla uložena"</string>
+    <string msgid="2543677492878715874" name="toast_record_saved">"Nahrávka byla uložena"</string>
+    <string msgid="8218803072221129182" name="toast_recorder_internal_error">"V záznamu došlo k interní chybě."</string>
+    <string msgid="1150004976629615550" name="toast_sdcard_insufficient_space">"Na SD kartě není dostatek místa."</string>
+    <string msgid="3707819946661311504" name="toast_sdcard_missing">"Není vložena SD karta."</string>
+    <string msgid="2185292052267585710" name="toast_station_renamed">"Název stanice byl změněn"</string>
+    <string msgid="4804871039582320419" name="toast_station_searched">"Vyhledané dostupné stanice:"</string>
+</resources>

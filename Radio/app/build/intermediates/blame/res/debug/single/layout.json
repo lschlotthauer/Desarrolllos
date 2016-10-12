@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\editstation.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\editstation.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_bottom.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\main_bottom.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_header.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\main_header.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\favorite_gridview.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\favorite_gridview.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\no_headset.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\no_headset.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\station_item.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\station_item.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_button.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\play_button.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\favorite.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\favorite.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\save_dialog.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\save_dialog.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\favorite_gridview_item.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\favorite_gridview_item.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\snackbar.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\snackbar.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fm_record_activity.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\layout\\fm_record_activity.xml"
+    }
+]

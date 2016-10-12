@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\main_alpha_in.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\main_alpha_in.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\noeaphone_alpha_out.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\noeaphone_alpha_out.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\noeaphone_translate_out.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\noeaphone_translate_out.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\main_alpha_out.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\main_alpha_out.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\floatbtn_alpha_in.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\floatbtn_alpha_in.xml"
+    },
+    {
+        "merged": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\build\\intermediates\\res\\merged\\debug\\anim\\noeaphone_alpha_in.xml",
+        "source": "C:\\GitLucas\\Desarrolllos\\Radio\\app\\src\\main\\res\\anim\\noeaphone_alpha_in.xml"
+    }
+]
