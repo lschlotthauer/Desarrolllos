@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             else if (tiros == 2) {
                 segundoClickPosition = position;
 
-                worker = new Worker(h,1000,false);
+                worker = new Worker(h,500,false);
                 worker.start();
                 tiros ++;
             }
@@ -109,7 +109,9 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         }
         worker = new Worker(h,time,false);
         worker.start();
+    }
 
+    public void inicialCronometro(){
         crono = new Cronometro(h2);
         crono.start();
     }
@@ -163,10 +165,8 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             for (Ficha item : lista) {
                 item.setEstado(Ficha.TAPADA);
             }
+            inicialCronometro();
         }
-
-
-
 
         adaptador.notifyDataSetChanged();
         return false;

@@ -24,7 +24,7 @@ public class Worker extends Thread {
             return;
         }
         Message msg =  new Message();
-        if (timeSleep == 1000) {
+        if (timeSleep == 500) {
             msg.arg1 = 1;
         }
 
