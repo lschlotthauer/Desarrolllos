@@ -10,7 +10,8 @@ public class Worker extends Thread {
 
     private Handler h ;
     private long timeSleep;
-    public Worker(Handler h, long time)
+    private boolean cronometro;
+    public Worker(Handler h, long time,boolean cronometro)
     {
         this.h = h;
         this.timeSleep = time;

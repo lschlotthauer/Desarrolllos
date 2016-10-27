@@ -25,13 +25,18 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     private List<Ficha> lista;
     private FichasAdapter adaptador;
     private RecyclerView rv;
+    private TextView tvTiempo;
+    private TextView tvVidas;
     private GridLayoutManager lManager;
     private Worker worker;
+    private Cronometro crono;
     private Handler h;
+    private Handler h2;
     private int tiros = 1;
     private int primerClickPosition;
     private int segundoClickPosition;
     private int nivel;
+    private int vidas = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             else if (tiros == 2) {
                 segundoClickPosition = position;
 
-                worker = new Worker(h,1000);
+                worker = new Worker(h,1000,false);
                 worker.start();
                 tiros ++;
             }
@@ -82,19 +87,31 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         rv.setLayoutManager(lManager);
 
         h = new Handler(this);
+        h2 = new Handler(this);
+        tvTiempo = (TextView) findViewById(R.id.textTiempo);
+        tvTiempo.setText("Tiempo: 00:30");
 
+        tvVidas = (TextView) findViewById(R.id.textVidas);
+        tvVidas.setText("Vidas: "+ vidas + " -");
         long time = 0;
         switch (nivel) {
-            case 1: time = 10000;
+            case 1:
+                time = 10000;
                 break;
-            case 2: time = 5000;
+            case 2:
+                time = 5000;
                 break;
-            case 3: time = 3000;
+            case 3:
+                time = 3000;
                 break;
-            default: break;
+            default:
+                break;
         }
-        worker = new Worker(h,time);
+        worker = new Worker(h,time,false);
         worker.start();
+
+        crono = new Cronometro(h2);
+        crono.start();
     }
 
 
@@ -132,11 +149,25 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                 ficha2.setEstado(Ficha.TAPADA);
             }
         }
-        else{
-            for (Ficha item: lista) {
+        else if(msg.arg1 == 2){
+            if(msg.arg2 >= 0 && msg.arg2 <10){
+                tvTiempo = (TextView) findViewById(R.id.textTiempo);
+                tvTiempo.setText("Tiempo: 00:0"+ msg.arg2);
+            }
+            else if(msg.arg2 >= 10 && msg.arg2 <=30){
+                tvTiempo = (TextView) findViewById(R.id.textTiempo);
+                tvTiempo.setText("Tiempo: 00:"+ msg.arg2);
+            }
+        }
+        else {
+            for (Ficha item : lista) {
                 item.setEstado(Ficha.TAPADA);
             }
         }
+
+
+
+
         adaptador.notifyDataSetChanged();
         return false;
     }
@@ -145,5 +176,6 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     protected void onDestroy() {
         super.onDestroy();
         worker.interrupt();
+        crono.interrupt();
     }
 }
