@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         worker = new Worker(h,time,false);
         worker.start();
 
-        mostrarToast("Nivel " + nivel);
+        mostrarToast("Nivel " + nivel,Toast.LENGTH_LONG);
     }
 
     public void inicialCronometro(){
@@ -155,11 +155,16 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             Ficha ficha2 = lista.get(segundoClickPosition);
 
             if (ficha1.getImagen() != ficha2.getImagen()) {
+                mostrarToast("No hay coincidencia!!!", Toast.LENGTH_SHORT);
                 ficha1.setEstado(Ficha.TAPADA);
                 ficha2.setEstado(Ficha.TAPADA);
                 vidas = vidas - 1;
                 tvVidas = (TextView) findViewById(R.id.textVidas);
                 tvVidas.setText("Vidas: "+ vidas + " -");
+            }
+            else
+            {
+                mostrarToast("Hay coincidencia!!!",Toast.LENGTH_SHORT);
             }
         }
         else if(msg.arg1 == 2){
@@ -189,12 +194,10 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         return false;
     }
 
-    private void mostrarToast(String mensaje){
+    private void mostrarToast(CharSequence mensaje, int duracion){
         Context context = getApplicationContext();
-        CharSequence text = mensaje;
-        int duration = Toast.LENGTH_LONG;
 
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast toast = Toast.makeText(context, mensaje, duracion);
         toast.setGravity(Gravity.BOTTOM,0,20);
         toast.show();
     }
