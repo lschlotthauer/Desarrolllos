@@ -16,6 +16,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.lucass.tpmemotest.Final.FinalActivity;
+import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     private int segundoClickPosition;
     private int nivel;
     private int vidas = 3;
-    private int tiempo;
+    private int tiempo = 30;
     private boolean termino= false;
 
     @Override
@@ -185,12 +188,16 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             inicialCronometro();
         }
 
-        if(vidas == 0 || tiempo == 0) {
-            termino = true;
-            //aca lanzar intent a otra ventana con el tiempo
-        }
-
         adaptador.notifyDataSetChanged();
+
+        //REVISAR ESTO DONDE VA Y QUE SE EJECUTE UNA SOLA VEZ
+        if(vidas == 0 || tiempo == 0) {
+
+            Intent i = new Intent(this, FinalActivity.class);
+            i.putExtra("Tiempo", tiempo);
+            i.putExtra("Vidas", vidas);
+            startActivity(i);
+        }
         return false;
     }
 
