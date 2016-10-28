@@ -1,5 +1,6 @@
 package com.example.lucass.tpmemotest;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
@@ -10,8 +11,10 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     private int segundoClickPosition;
     private int nivel;
     private int vidas = 3;
+    private int tiempo;
+    private boolean termino= false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
 
         lista = cargarFichas();
         comenzar(lista);
+
     }
 
     @Override
@@ -109,6 +115,8 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         }
         worker = new Worker(h,time,false);
         worker.start();
+
+        mostrarToast("Nivel " + nivel);
     }
 
     public void inicialCronometro(){
@@ -149,16 +157,20 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             if (ficha1.getImagen() != ficha2.getImagen()) {
                 ficha1.setEstado(Ficha.TAPADA);
                 ficha2.setEstado(Ficha.TAPADA);
+                vidas = vidas - 1;
+                tvVidas = (TextView) findViewById(R.id.textVidas);
+                tvVidas.setText("Vidas: "+ vidas + " -");
             }
         }
         else if(msg.arg1 == 2){
-            if(msg.arg2 >= 0 && msg.arg2 <10){
+            tiempo = msg.arg2;
+            if(tiempo >= 0 && tiempo <10){
                 tvTiempo = (TextView) findViewById(R.id.textTiempo);
-                tvTiempo.setText("Tiempo: 00:0"+ msg.arg2);
+                tvTiempo.setText("Tiempo: 00:0"+ tiempo);
             }
-            else if(msg.arg2 >= 10 && msg.arg2 <=30){
+            else if(tiempo >= 10 && tiempo <=30){
                 tvTiempo = (TextView) findViewById(R.id.textTiempo);
-                tvTiempo.setText("Tiempo: 00:"+ msg.arg2);
+                tvTiempo.setText("Tiempo: 00:"+ tiempo);
             }
         }
         else {
@@ -168,8 +180,23 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             inicialCronometro();
         }
 
+        if(vidas == 0 || tiempo == 0) {
+            termino = true;
+            //aca lanzar intent a otra ventana con el tiempo
+        }
+
         adaptador.notifyDataSetChanged();
         return false;
+    }
+
+    private void mostrarToast(String mensaje){
+        Context context = getApplicationContext();
+        CharSequence text = mensaje;
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.BOTTOM,0,20);
+        toast.show();
     }
 
     @Override
