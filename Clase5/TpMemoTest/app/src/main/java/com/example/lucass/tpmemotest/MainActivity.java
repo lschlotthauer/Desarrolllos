@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
+import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -167,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             }
             else
             {
+                hayGanador();
                 mostrarToast("Hay coincidencia!!!",Toast.LENGTH_SHORT);
             }
         }
@@ -188,16 +190,16 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             inicialCronometro();
         }
 
-        adaptador.notifyDataSetChanged();
-
-        //REVISAR ESTO DONDE VA Y QUE SE EJECUTE UNA SOLA VEZ
         if(vidas == 0 || tiempo == 0) {
-
+            worker.interrupt();
+            crono.interrupt();
             Intent i = new Intent(this, FinalActivity.class);
             i.putExtra("Tiempo", tiempo);
             i.putExtra("Vidas", vidas);
             startActivity(i);
         }
+
+        adaptador.notifyDataSetChanged();
         return false;
     }
 
@@ -207,6 +209,17 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         Toast toast = Toast.makeText(context, mensaje, duracion);
         toast.setGravity(Gravity.BOTTOM,0,20);
         toast.show();
+    }
+
+    private boolean hayGanador(){
+        for (Ficha f : lista){
+            if (f.getEstado()== Ficha.TAPADA){
+                Log.d("MAIN","NO GANO");
+                return false;
+            }
+        }
+        Log.d("MAIN","GANO");
+        return true;
     }
 
     @Override

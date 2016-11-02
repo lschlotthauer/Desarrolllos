@@ -8,6 +8,41 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.lucass.tpmemotest.Final.FinalActivity">
+    tools:context="com.example.lucass.tpmemotest.Final.FinalActivity"
+    android:background="@color/colorFondo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondo">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GANASTE!!!!"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textResultado" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="sdsadadas"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textVidasFinal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="asdasdas"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textTiempoFinal" />
+    </LinearLayout>
 
 </RelativeLayout>
