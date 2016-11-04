@@ -37,13 +37,7 @@ public class FinalActivity extends AppCompatActivity {
         }
 
         tvTiempo = (TextView) findViewById(R.id.textTiempoFinal);
-
-        if(tiempo >= 0 && tiempo <10){
-            tvTiempo.setText("Tiempo: 00:0"+ tiempo);
-        }
-        else if(tiempo >= 10 && tiempo <=30){
-            tvTiempo.setText("Tiempo: 00:"+ tiempo);
-        }
+        tvTiempo.setText("Tiempo: "+ tiempo);
 
         tvVidas = (TextView) findViewById(R.id.textVidasFinal);
         tvVidas.setText("Vidas: "+ vidas);

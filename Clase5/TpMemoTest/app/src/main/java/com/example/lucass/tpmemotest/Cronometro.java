@@ -16,7 +16,8 @@ public class Cronometro extends Thread {
 
     @Override
     public void run() {
-        for(int i=30; i>-1; i--) {
+        int i=0;
+        while(true){
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -26,10 +27,8 @@ public class Cronometro extends Thread {
             Message msg =  new Message();
             msg.arg1 = 2;
             msg.arg2 = i;
+            i = i + 1000;
             h.sendMessage(msg);
         }
-
     }
-
-
 }

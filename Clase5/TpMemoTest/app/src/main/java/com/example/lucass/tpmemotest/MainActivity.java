@@ -14,12 +14,14 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lucass.tpmemotest.Final.FinalActivity;
 import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -44,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     private int segundoClickPosition;
     private int nivel;
     private int vidas = 3;
-    private int tiempo = 30;
     private boolean termino= false;
+    private Time t = new Time(0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         h = new Handler(this);
         h2 = new Handler(this);
         tvTiempo = (TextView) findViewById(R.id.textTiempo);
-        tvTiempo.setText("Tiempo: 00:30");
+        tvTiempo.setText("Tiempo: " + t.getTime());
 
         tvVidas = (TextView) findViewById(R.id.textVidas);
         tvVidas.setText("Vidas: "+ vidas + " -");
@@ -175,22 +177,17 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                     crono.interrupt();
                     Intent i = new Intent(this, FinalActivity.class);
                     i.putExtra("Gano", true);
-                    i.putExtra("Tiempo", tiempo);
+                    i.putExtra("Tiempo", t.getTime());
                     i.putExtra("Vidas", vidas);
                     startActivity(i);
                 }
             }
         }
         else if(msg.arg1 == 2){
-            tiempo = msg.arg2;
+            t.setTime(msg.arg2);
             tvTiempo = (TextView) findViewById(R.id.textTiempo);
+            tvTiempo.setText("Tiempo: "+ t.getTime());
 
-            if(tiempo >= 0 && tiempo <10){
-                tvTiempo.setText("Tiempo: 00:0"+ tiempo);
-            }
-            else if(tiempo >= 10 && tiempo <=30){
-                tvTiempo.setText("Tiempo: 00:"+ tiempo);
-            }
         }
         else {
             for (Ficha item : lista) {
@@ -199,12 +196,12 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             inicialCronometro();
         }
 
-        if(vidas == 0 || tiempo == 0) {
+        if(vidas == 0) {
             worker.interrupt();
             crono.interrupt();
             Intent i = new Intent(this, FinalActivity.class);
             i.putExtra("Gano", false);
-            i.putExtra("Tiempo", tiempo);
+            i.putExtra("Tiempo", t.getTime());
             i.putExtra("Vidas", vidas);
             startActivity(i);
         }
@@ -230,6 +227,14 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         }
         Log.d("MAIN","GANO");
         return true;
+    }
+
+    public void startChronometer(View view) {
+        ((Chronometer) findViewById(R.id.chrono)).start();
+    }
+
+    public void stopChronometer(View view) {
+        ((Chronometer) findViewById(R.id.chrono)).stop();
     }
 
     @Override

@@ -19,7 +19,13 @@
         android:textColor="@color/colorTexto"
         android:id="@+id/textVidas" />
 
-    <TextView
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chrono"
+            android:layout_weight="1" />
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
