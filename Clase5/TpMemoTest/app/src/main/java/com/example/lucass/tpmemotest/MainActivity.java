@@ -168,18 +168,27 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             }
             else
             {
-                hayGanador();
                 mostrarToast("Hay coincidencia!!!",Toast.LENGTH_SHORT);
+                if(hayGanador())
+                {
+                    worker.interrupt();
+                    crono.interrupt();
+                    Intent i = new Intent(this, FinalActivity.class);
+                    i.putExtra("Gano", true);
+                    i.putExtra("Tiempo", tiempo);
+                    i.putExtra("Vidas", vidas);
+                    startActivity(i);
+                }
             }
         }
         else if(msg.arg1 == 2){
             tiempo = msg.arg2;
+            tvTiempo = (TextView) findViewById(R.id.textTiempo);
+
             if(tiempo >= 0 && tiempo <10){
-                tvTiempo = (TextView) findViewById(R.id.textTiempo);
                 tvTiempo.setText("Tiempo: 00:0"+ tiempo);
             }
             else if(tiempo >= 10 && tiempo <=30){
-                tvTiempo = (TextView) findViewById(R.id.textTiempo);
                 tvTiempo.setText("Tiempo: 00:"+ tiempo);
             }
         }
@@ -194,6 +203,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             worker.interrupt();
             crono.interrupt();
             Intent i = new Intent(this, FinalActivity.class);
+            i.putExtra("Gano", false);
             i.putExtra("Tiempo", tiempo);
             i.putExtra("Vidas", vidas);
             startActivity(i);
