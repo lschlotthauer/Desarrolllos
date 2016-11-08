@@ -26,16 +26,15 @@
             android:text=" - Tiempo: "
             android:layout_marginLeft="5dp"
             android:textColor="@color/colorTexto"
-            android:id="@+id/textVidas" />
+            android:id="@+id/textTiempo" />
 
         <Chronometer
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/chrono"
-            android:layout_weight="1"
             android:textColor="@color/colorTexto"
-            android:textSize="12sp" />
+             />
 
     </LinearLayout>
 

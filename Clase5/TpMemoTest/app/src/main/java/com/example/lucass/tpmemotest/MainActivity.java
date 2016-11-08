@@ -182,9 +182,12 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                 {
                     worker.interrupt();
                     //crono.interrupt();
+
+                    long elapsedMillis = SystemClock.elapsedRealtime() - ct.getBase();
+                    Log.d("TpMemoTest", "Tiempo: " + elapsedMillis);
                     Intent i = new Intent(this, FinalActivity.class);
                     i.putExtra("Gano", true);
-                    i.putExtra("Tiempo", ct.getBase());
+                    i.putExtra("Tiempo", elapsedMillis);
                     i.putExtra("Vidas", vidas);
                     ct.stop();
                     startActivity(i);
@@ -207,9 +210,12 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         if(vidas == 0) {
             worker.interrupt();
             //crono.interrupt();
+
             Intent i = new Intent(this, FinalActivity.class);
             i.putExtra("Gano", false);
-            i.putExtra("Tiempo", ct.getBase());
+            long elapsedMillis = SystemClock.elapsedRealtime() - ct.getBase();
+            Log.d("TpMemoTest", "Tiempo: " + elapsedMillis);
+            i.putExtra("Tiempo", elapsedMillis);
             ct.stop();
             i.putExtra("Vidas", vidas);
             startActivity(i);
