@@ -10,7 +10,7 @@ import com.example.lucass.tpmemotest.R;
 public class FinalActivity extends AppCompatActivity {
 
     private int vidas;
-    private int tiempo;
+    private String tiempo;
     private String resultado;
     private boolean gano= false;
 
@@ -26,7 +26,7 @@ public class FinalActivity extends AppCompatActivity {
         Intent i = getIntent();
         Bundle extras = i.getExtras();
         vidas = extras.getInt("Vidas");
-        tiempo = extras.getInt("Tiempo");
+        tiempo = extras.getString("Tiempo");
         gano = extras.getBoolean("Gano");
 
         if(gano) {

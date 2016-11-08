@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v7.app.AppCompatActivity;
@@ -47,12 +48,16 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     private int nivel;
     private int vidas = 3;
     private boolean termino= false;
-    private Time t = new Time(0);
+
+
+    Chronometer ct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ct = (Chronometer) findViewById(R.id.chrono);
 
         Intent i = getIntent();
         Bundle extras = i.getExtras();
@@ -100,11 +105,11 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
 
         h = new Handler(this);
         h2 = new Handler(this);
-        tvTiempo = (TextView) findViewById(R.id.textTiempo);
-        tvTiempo.setText("Tiempo: " + t.getTime());
+        //tvTiempo = (TextView) findViewById(R.id.textTiempo);
+        //tvTiempo.setText("Tiempo: " + t.getTime());
 
         tvVidas = (TextView) findViewById(R.id.textVidas);
-        tvVidas.setText("Vidas: "+ vidas + " -");
+        tvVidas.setText("Vidas: "+ vidas);
         long time = 0;
         switch (nivel) {
             case 1:
@@ -126,8 +131,10 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
     }
 
     public void inicialCronometro(){
-        crono = new Cronometro(h2);
-        crono.start();
+        //crono = new Cronometro(h2);
+        //crono.start();
+        ct.setBase(SystemClock.elapsedRealtime());
+        ct.start();
     }
 
 
@@ -166,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                 ficha2.setEstado(Ficha.TAPADA);
                 vidas = vidas - 1;
                 tvVidas = (TextView) findViewById(R.id.textVidas);
-                tvVidas.setText("Vidas: "+ vidas + " -");
+                tvVidas.setText("Vidas: "+ vidas);
             }
             else
             {
@@ -174,21 +181,22 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
                 if(hayGanador())
                 {
                     worker.interrupt();
-                    crono.interrupt();
+                    //crono.interrupt();
                     Intent i = new Intent(this, FinalActivity.class);
                     i.putExtra("Gano", true);
-                    i.putExtra("Tiempo", t.getTime());
+                    i.putExtra("Tiempo", ct.getBase());
                     i.putExtra("Vidas", vidas);
+                    ct.stop();
                     startActivity(i);
                 }
             }
         }
-        else if(msg.arg1 == 2){
-            t.setTime(msg.arg2);
-            tvTiempo = (TextView) findViewById(R.id.textTiempo);
-            tvTiempo.setText("Tiempo: "+ t.getTime());
+        //else if(msg.arg1 == 2){
+          //  t.setTime(msg.arg2);
+            //tvTiempo = (TextView) findViewById(R.id.textTiempo);
+            //tvTiempo.setText("Tiempo: "+ t.getTime());
 
-        }
+        //}
         else {
             for (Ficha item : lista) {
                 item.setEstado(Ficha.TAPADA);
@@ -198,10 +206,11 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
 
         if(vidas == 0) {
             worker.interrupt();
-            crono.interrupt();
+            //crono.interrupt();
             Intent i = new Intent(this, FinalActivity.class);
             i.putExtra("Gano", false);
-            i.putExtra("Tiempo", t.getTime());
+            i.putExtra("Tiempo", ct.getBase());
+            ct.stop();
             i.putExtra("Vidas", vidas);
             startActivity(i);
         }
@@ -218,29 +227,21 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
         toast.show();
     }
 
-    private boolean hayGanador(){
-        for (Ficha f : lista){
-            if (f.getEstado()== Ficha.TAPADA){
-                Log.d("MAIN","NO GANO");
+    private boolean hayGanador() {
+        for (Ficha f : lista) {
+            if (f.getEstado() == Ficha.TAPADA) {
+                Log.d("MAIN", "NO GANO");
                 return false;
             }
         }
-        Log.d("MAIN","GANO");
+        Log.d("MAIN", "GANO");
         return true;
-    }
-
-    public void startChronometer(View view) {
-        ((Chronometer) findViewById(R.id.chrono)).start();
-    }
-
-    public void stopChronometer(View view) {
-        ((Chronometer) findViewById(R.id.chrono)).stop();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         worker.interrupt();
-        crono.interrupt();
+        ct.stop();
     }
 }
