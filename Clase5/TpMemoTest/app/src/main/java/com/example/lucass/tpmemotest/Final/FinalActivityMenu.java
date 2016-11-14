@@ -1,10 +1,13 @@
 package com.example.lucass.tpmemotest.Final;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,11 +15,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.lucass.tpmemotest.MainActivity;
+import com.example.lucass.tpmemotest.MiDialogo;
 import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
 import com.example.lucass.tpmemotest.R;
 import com.example.lucass.tpmemotest.RankingActivity;
 
-public class FinalActivityMenu extends AppCompatActivity {
+public class FinalActivityMenu extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     private int vidas;
     private long tiempo;
@@ -72,7 +76,16 @@ public class FinalActivityMenu extends AppCompatActivity {
             b.setVisibility(View.VISIBLE);
             b.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    // Perform action on click
+                    LayoutInflater li = LayoutInflater.from(v.getContext());
+                    View viewAlert = li.inflate(R.layout.layout_dialogo,null);
+
+                    AlertDialog.Builder builder = new
+                            AlertDialog.Builder()uil()
+
+
+
+                    //MiDialogo md =  new MiDialogo();
+                    //md.show(getSupportFragmentManager(),"Dialogo");
                 }
             });
         }
@@ -124,5 +137,18 @@ public class FinalActivityMenu extends AppCompatActivity {
     @Override
     public void onBackPressed(){
 
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        switch (which)
+        {
+            case AlertDialog.BUTTON_POSITIVE:
+            {
+                Log.d("act", "Positivo");
+
+            }
+
+        }
     }
 }
