@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TpMemoTest</string>
+    <string name="title_activity_final_menu">FinalActivityMenu</string>
 </resources>

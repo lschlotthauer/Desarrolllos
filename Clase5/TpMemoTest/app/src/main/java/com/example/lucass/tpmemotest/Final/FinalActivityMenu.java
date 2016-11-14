@@ -3,12 +3,20 @@ package com.example.lucass.tpmemotest.Final;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.lucass.tpmemotest.MainActivity;
+import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
 import com.example.lucass.tpmemotest.R;
+import com.example.lucass.tpmemotest.RankingActivity;
 
-public class FinalActivity extends AppCompatActivity {
+public class FinalActivityMenu extends AppCompatActivity {
 
     private int vidas;
     private long tiempo;
@@ -22,7 +30,11 @@ public class FinalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final);
+        setContentView(R.layout.activity_final_menu);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("tpMemoTest");
+        setSupportActionBar(toolbar);
 
         Intent i = getIntent();
         Bundle extras = i.getExtras();
@@ -56,6 +68,13 @@ public class FinalActivity extends AppCompatActivity {
 
         if(gano) {
             resultado = "GANASTE!!!";
+            Button b = (Button) findViewById(R.id.btnGuardar);
+            b.setVisibility(View.VISIBLE);
+            b.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    // Perform action on click
+                }
+            });
         }
         else{
             resultado = "PERDISTE!!!";
@@ -69,6 +88,37 @@ public class FinalActivity extends AppCompatActivity {
 
         tvVidas = (TextView) findViewById(R.id.textResultado);
         tvVidas.setText(""+resultado);
+
+        Button button = (Button) findViewById(R.id.btnVolver);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), NivelesActivity.class);
+                startActivity(i);
+            }
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuItem item = menu.findItem(R.id.menu_item_ranking);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id)
+        {
+            case R.id.menu_item_ranking:
+            {
+                Log.d("act", "Ranking");
+                Intent i = new Intent(this, RankingActivity.class);
+                startActivity(i);
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

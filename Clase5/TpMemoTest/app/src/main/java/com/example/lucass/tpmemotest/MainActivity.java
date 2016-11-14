@@ -19,7 +19,7 @@ import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.lucass.tpmemotest.Final.FinalActivity;
+import com.example.lucass.tpmemotest.Final.FinalActivityMenu;
 import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
 
 import java.sql.Time;
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
 
                     long elapsedMillis = SystemClock.elapsedRealtime() - ct.getBase();
                     Log.d("TpMemoTest", "Tiempo: " + elapsedMillis);
-                    Intent i = new Intent(this, FinalActivity.class);
+                    Intent i = new Intent(this, FinalActivityMenu.class);
                     i.putExtra("Gano", true);
                     i.putExtra("Tiempo", elapsedMillis);
                     i.putExtra("Vidas", vidas);
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             worker.interrupt();
             //crono.interrupt();
 
-            Intent i = new Intent(this, FinalActivity.class);
+            Intent i = new Intent(this, FinalActivityMenu.class);
             i.putExtra("Gano", false);
             long elapsedMillis = SystemClock.elapsedRealtime() - ct.getBase();
             Log.d("TpMemoTest", "Tiempo: " + elapsedMillis);
