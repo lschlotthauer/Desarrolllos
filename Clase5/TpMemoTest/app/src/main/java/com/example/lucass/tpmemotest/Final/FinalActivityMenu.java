@@ -80,8 +80,13 @@ public class FinalActivityMenu extends AppCompatActivity implements DialogInterf
                     View viewAlert = li.inflate(R.layout.layout_dialogo,null);
 
                     AlertDialog.Builder builder = new
-                            AlertDialog.Builder()uil()
+                            AlertDialog.Builder(v.getContext());
+                    builder.setTitle("Ingrese su nombre");
+                    builder.setView(viewAlert);
 
+                    builder.setPositiveButton("Guardar", (DialogInterface.OnClickListener)v.getContext());
+                    AlertDialog ad = builder.create();
+                    ad.show();
 
 
                     //MiDialogo md =  new MiDialogo();

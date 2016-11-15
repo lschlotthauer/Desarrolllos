@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements OnFichaClick, Han
             else if (tiros == 2) {
                 segundoClickPosition = position;
 
-                worker = new Worker(h,500,false);
+                worker = new Worker(h,200,false);
                 worker.start();
                 tiros ++;
             }
