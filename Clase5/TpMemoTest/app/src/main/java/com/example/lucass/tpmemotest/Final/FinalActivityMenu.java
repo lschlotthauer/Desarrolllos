@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.lucass.tpmemotest.MainActivity;
@@ -20,7 +21,7 @@ import com.example.lucass.tpmemotest.Niveles.NivelesActivity;
 import com.example.lucass.tpmemotest.R;
 import com.example.lucass.tpmemotest.RankingActivity;
 
-public class FinalActivityMenu extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class FinalActivityMenu extends AppCompatActivity{
 
     private int vidas;
     private long tiempo;
@@ -76,21 +77,10 @@ public class FinalActivityMenu extends AppCompatActivity implements DialogInterf
             b.setVisibility(View.VISIBLE);
             b.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    LayoutInflater li = LayoutInflater.from(v.getContext());
-                    View viewAlert = li.inflate(R.layout.layout_dialogo,null);
-
-                    AlertDialog.Builder builder = new
-                            AlertDialog.Builder(v.getContext());
-                    builder.setTitle("Ingrese su nombre");
-                    builder.setView(viewAlert);
-
-                    builder.setPositiveButton("Guardar", (DialogInterface.OnClickListener)v.getContext());
-                    AlertDialog ad = builder.create();
-                    ad.show();
 
 
-                    //MiDialogo md =  new MiDialogo();
-                    //md.show(getSupportFragmentManager(),"Dialogo");
+                    MiDialogo md =  new MiDialogo();
+                    md.show(getSupportFragmentManager(),"Dialogo");
                 }
             });
         }
@@ -142,18 +132,5 @@ public class FinalActivityMenu extends AppCompatActivity implements DialogInterf
     @Override
     public void onBackPressed(){
 
-    }
-
-    @Override
-    public void onClick(DialogInterface dialog, int which) {
-        switch (which)
-        {
-            case AlertDialog.BUTTON_POSITIVE:
-            {
-                Log.d("act", "Positivo");
-
-            }
-
-        }
     }
 }
