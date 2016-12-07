@@ -78,7 +78,6 @@ public class FinalActivityMenu extends AppCompatActivity{
             b.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-
                     MiDialogo md =  new MiDialogo();
                     md.show(getSupportFragmentManager(),"Dialogo");
                 }

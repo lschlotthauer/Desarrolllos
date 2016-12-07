@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 
+import java.io.Console;
+
 /**
  * Created by lucass on 11/14/2016.
  */
@@ -27,7 +29,7 @@ public class MiDialogo extends AppCompatDialogFragment {
 //        AlertDialog ad = builder.create();
 
         LayoutInflater li = LayoutInflater.from(getActivity());
-        View viewAlert = li.inflate(R.layout.layout_dialogo,null);
+        final View viewAlert = li.inflate(R.layout.layout_dialogo,null);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Ingrese su nombre");
@@ -35,9 +37,10 @@ public class MiDialogo extends AppCompatDialogFragment {
 
         builder.setPositiveButton("Guardar", new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog, int which){
-                EditText et = (EditText) findViewById(R.id.editText);
-                Log.d("act", "Resultado: "+ et.getText().toString());
+                final EditText  text =  (EditText) viewAlert.findViewById(R.id.editText);
+                Log.d("Dialogo", "Nombre: " + text.getText());
             }
+
         });
         AlertDialog ad = builder.create();
         return ad;
