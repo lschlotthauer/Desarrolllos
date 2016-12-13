@@ -25,7 +25,7 @@
             android:name=".Final.FinalActivityMenu"
             android:label="@string/title_activity_final_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RankingActivity"></activity>
+        <activity android:name=".Ranking.RankingActivity"></activity>
     </application>
 
 </manifest>
