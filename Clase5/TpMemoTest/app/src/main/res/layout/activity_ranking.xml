@@ -11,4 +11,49 @@
     android:background="@color/colorFondo"
     tools:context="com.example.lucass.tpmemotest.Ranking.RankingActivity">
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondo">
+
+    <!--Nombre-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorTexto"
+        android:id="@+id/lNombre" />
+
+    <!--Tiempo-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tiempo"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/colorTexto"
+        android:id="@+id/lTiempo" />
+
+    <!--Vidas-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vidas"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/colorTexto"
+        android:id="@+id/lVidas" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listRanking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
+
 </RelativeLayout>

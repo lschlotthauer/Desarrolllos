@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFondo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Lucas"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textNombre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="00:10"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textTiempo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="3"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorTexto"
+            android:id="@+id/textVidas" />
+
+</LinearLayout>

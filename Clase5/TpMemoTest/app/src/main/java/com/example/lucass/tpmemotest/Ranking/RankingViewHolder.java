@@ -8,7 +8,7 @@ import android.widget.TextView;
  * Created by lucass on 12/13/2016.
  */
 
-public class RankingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class RankingViewHolder extends RecyclerView.ViewHolder{
 
     TextView txtNombre;
     TextView txtTiempo;
@@ -16,10 +16,8 @@ public class RankingViewHolder extends RecyclerView.ViewHolder implements View.O
 
     public RankingViewHolder(View itemView) {
         super(itemView);
-    }
 
-    @Override
-    public void onClick(View v) {
 
     }
+
 }
